@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <Fragment>
         <NavBar />
-        <Container className="main">
+        <Container className="main main">
           <EventDashboard />
         </Container>
       </Fragment>
