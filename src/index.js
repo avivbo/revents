@@ -9,7 +9,7 @@ const rootEl = document.getElementById('root');
 let render = () => {
     ReactDOM.render(<App />, rootEl)
 }
-
+  
 console.log(module);
 window.module = module;
 
