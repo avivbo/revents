@@ -16,7 +16,7 @@ export default class EventListItem extends Component {
                 src={event.hostPhotoURL} 
               />
               <Item.Content>
-                <Item.Header as="a">{event.title}</Item.Header>
+                <Item.Header>{event.title}</Item.Header>
                 <Item.Description>
                   Hosted by <a>{event.hostedBy}</a>
                 </Item.Description>
@@ -32,7 +32,7 @@ export default class EventListItem extends Component {
         </Segment>
         <Segment secondary>
           <List horizontal>
-          {event.attendees.map(attendee => {
+          {event.attendees && event.attendees.map(attendee => {
             return <EventListAttendee key={attendee.id} attendee={attendee} />
             })
           }
